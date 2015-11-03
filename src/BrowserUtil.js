@@ -88,7 +88,7 @@ var BrowserUtil = function (userAgent) {
         var os = [];
         if (/Win(?:dows )?([^do]{2})\s?(\d+\.\d+)?/i.test(ua)) {
             os[0] = 'Windows';
-            console.log(RegExp.$1 +' ' + RegExp.$2+' '+RegExp.$3);
+            console.log(RegExp.$1 +',' + RegExp.$2+','+RegExp.$3);
             if (RegExp.$1.toUpperCase() == 'NT') {
                 var v = sys.Windows[RegExp.$2];
                 os[1] = v ? v : RegExp.$2;
